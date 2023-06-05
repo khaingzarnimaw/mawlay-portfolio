@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
 
 const Test = () => {
   return (
-    <div className=' bg-violet-100 h-screen flex justify-around items-end'>
-    <div className='w-full h-full bg-blue-500 basis-1/3'></div>
-    <div className='w-[100%] h-[100%] bg-yellow-500 basis-2/3'></div>
-    </div>
-  )
-}
+    <>
+      <div className=" h-screen flex justify-center items-center ">
 
-export default Test
+        <div>
+          <input type="text" />
+          <button 
+          className="bg-blue-700 py-2 px-3 rounded-xl text-slate-100 shadow-xl shadow-blue-300 hover:bg-red-600 active:bg-black active:text-blue">Submit</button>
+        </div>
+
+      </div>
+    </>
+  );
+};
+
+export default Test;
