@@ -8,10 +8,10 @@ const Home = () => {
     <>
       {/* Home အရင်ဆုံးပေါ်အောင်လုပ် */}
      
-      {/* <Top/> */}
+      <Top/>
       <About/>
-      {/* <Portfolio/>
-      <Contant/> */}
+       <Portfolio/>
+      {/* <Contant/>  */}
       
     </>
   )
