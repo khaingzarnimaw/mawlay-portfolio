@@ -1,6 +1,7 @@
 import React from 'react'
 
 const NavBar = () => {
+
   return (
     <>
       <nav className="w-full bg-gray-100 text-slate-700 p-[10px] fixed top-0" >
@@ -14,7 +15,8 @@ const NavBar = () => {
              <a href='' className=''>
               Home
              </a>
-          </li>
+           </li>
+      
         </ul>
       </nav>
     </>

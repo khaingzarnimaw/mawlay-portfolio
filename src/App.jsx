@@ -3,16 +3,16 @@ import "./App.css";
 import Home from "./pages/Home";
 import Test from "./pages/Test";
 import NavBar from "./components/NavBar";
-import "./assets/css/button51.css" //{beautiful css button about ထဲမှာရှိတဲ့  }
+import "./assets/css/button51.css"; //{beautiful css button about ထဲမှာရှိတဲ့  }
 
 function App() {
   return (
     <>
-     <NavBar/>
+      <NavBar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/test" element={<Test/>}/>
+          <Route path="/test" element={<Test />} />
         </Routes>
       </BrowserRouter>
     </>
