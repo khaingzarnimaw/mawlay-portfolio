@@ -25,9 +25,12 @@ const ProjectCard = ({ data }) => {
         tempora nostrum?
       </div>
       <div className="flex gap-3 text-xs ">
-        <div className=" bg-orange-500 px-4 rounded-md ">Html</div>
+        {/* <div className=" bg-orange-500 px-4 rounded-md ">Html</div>
         <div className=" bg-blue-500 px-4 rounded-md ">Css</div>
-        <div className=" bg-green-500 px-6 rounded-md">Javascript</div>
+        <div className=" bg-green-500 px-6 rounded-md">Javascript</div> */}
+        {data.languages.map((language,index)=> (
+          <div className="bg-slate-200 px-3 py-1" key={index}>{language}</div>
+        ))}
       </div>
     </div>
   );

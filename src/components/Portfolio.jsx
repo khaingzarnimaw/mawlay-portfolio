@@ -9,18 +9,21 @@ const Portfolio = () => {
       text: "",
       githubUrl: "https://github.com/khaingzarnimaw",
       url: "http://www.google.com",
+      languages:['Javascript','C#','TailWind']
     },
     {
       title: "Project Two",
       text: "",
       githubUrl: "https://github.com/khaingzarnimaw",
       url: "http://www.google.com",
+      languages:['TailWind','Css','Html']
     },
     {
       title: "Project Three",
       text: "",
       githubUrl: "https://github.com/khaingzarnimaw",
       url: "http://www.google.com",
+      languages:['PHP','Laravel']
     },
   ]);
   // console.log(projects);
