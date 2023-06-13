@@ -1,3 +1,4 @@
+import React from "react";
 import About from "../components/About"
 import Contant from "../components/Contant"
 import Portfolio from "../components/Portfolio"
@@ -8,14 +9,14 @@ const Home = () => {
     <>
       {/* Home အရင်ဆုံးပေါ်အောင်လုပ် */}
      
-      <Top/>
+      {/* <Top/> */}
       <About/>
        <Portfolio/>
-      {/* <Contant/>  */}
+      <Contant/> 
       
     </>
   )
 }
 
-export default Home
+export default Home;
 
