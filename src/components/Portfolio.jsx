@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import Title from "./resources/Title";
 
 const Portfolio = () => {
+  
   const [projects, setProjects] = useState([
     {
       title: "Project One",
@@ -27,7 +28,7 @@ const Portfolio = () => {
       languages: ["PHP", "Laravel"],
     },
   ]);
-  // console.log(projects);
+   console.log(projects);
 
   return (
     <div className="h-screen flex justify-center items-center ">
