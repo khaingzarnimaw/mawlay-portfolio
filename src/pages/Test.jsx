@@ -14,7 +14,7 @@ const Test = () => {
       </div> */}
 
       <div className=" relative h-screen">
-        <div className="w-[100px] h-[100px] bg-red-500 absolute-right-[100px] top-[35%] "> </div>
+        <div className="absolute left-10 "> hello </div>
       </div>
     </>
   );
