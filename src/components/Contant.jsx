@@ -1,12 +1,14 @@
 import React from "react";
 import Title from "./resources/Title";
+import {GrSend} from "react-icons/gr"
+
 const Contant = () => {
   return (
-    <div className="h-screen flex justify-center items-center ">
+    <div className=" flex justify-center items-center mt-15 mb-20">
       <div className="w-[70%] mx-auto">
         <Title title={"Contact"} setTitle={"Get in touch with me"} />
 
-        <div className=" flex gap-3 ">
+        <div className=" flex gap-3 flex-col md:flex-row ">
           <div className=" basis-1/2 ">
             <form className=" flex flex-col gap-5 ">
               <div>
@@ -37,7 +39,10 @@ const Contant = () => {
               </div>
               <div className="text-center">
                 <button className=" py-3 px-5 border border-slate-800 rounded-sm ">
-                  Send Message
+                  <div className="flex gap-2 ">
+                    <GrSend className="text-xl"/>Send Message
+                  </div>
+                  
                 </button>
               </div>
             </form>

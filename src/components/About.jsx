@@ -5,16 +5,16 @@ import Title from "./resources/Title";
 const About = () => {
   return (
     <>
-      <div className=" h-screen flex justify-center items-center ">
-        <div className=" w-[70%] mx-auto">
-          {/* <span className=" text-3xl font-bold underline"> About</span>
+      <div className=" flex md:justify-center justify-start items-center mb-4 ">
+        <div className=" w-[70%] mx-auto  ">
+          {/* <span className=" text-3xl font-b10old underline"> About</span>
           <span className=" text-sm bg-slate-300 p-1 ml-2">Who am I</span> */}
-          <Title title={"About"} setTitle={"Who am i"} />
+          <Title title={"About Me"} setTitle={"Who am i"} />
 
-          <div className="flex gap-10 ">
+          <div className="flex gap-10 flex-col md:flex-row ">
             {/* About Image */}
             <div className="basis-1/3">
-              <img src={AboutImg} alt="" />
+              <img className ="w-[80%] md:w-[100%]  "src={AboutImg} alt="" />
             </div>
 
             {/* Information */}
@@ -29,6 +29,7 @@ const About = () => {
                 illum illo exercitationem, mollitia numquam magni ea aspernatur
                 esse iusto eveniet non repudiandae voluptates!
               </p>
+              
 
               {/* <div className=" cursor-pointer  bg-orange-300 px-3 py-3 inline text-white shadow-sw " >More about me</div> */}
               {/* လိုလဲရေးလို့ ရပါတယ် */}

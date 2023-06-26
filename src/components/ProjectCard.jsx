@@ -7,7 +7,7 @@ const ProjectCard = ({ data }) => {
     <div>
       <img src={Top} alt="" />
 
-      <div className="flex justify-between  items-center mt-2">
+      <div className="flex justify-between  items-center mt-2 ">
         <div className=" text-l font-bold">{data.title}</div>
         <span className="flex">
           <a href={data.githubUrl} target=" _black" >
