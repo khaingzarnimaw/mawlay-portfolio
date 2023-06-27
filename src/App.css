@@ -3,11 +3,90 @@
 @tailwind utilities;
 
 
-#top{
+/* #top{
     background-image: url("./assets/img/top.png");
     
     background-size:cover;
     background-attachment: fixed;
     background-position: center;
+} */
+.top{
+    display:flex;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../src/assets/img/top.png");
+    background-size:cover;
+    background-position: bottom;
+    background-position: center;
+    position: relative;
+    background-position: top;
+    z-index:1;
+    background-attachment: fixed;
+}
+.top::before{
+    content:"";
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width:100%;
+    height: 100vh;
+    position:absolute;
+    opacity:0.5;
+    z-index: -1;
+}
+.skill{
+    /* display:flex; */
+    width: 100%;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../src/assets/img/ke1.png");
+    background-size:cover;
+    background-position: bottom;
+    background-position: center;
+    position: relative;
+    background-position: top;
+    z-index:1;
+    background-attachment: fixed;
+
+}
+.skill::before{
+    content:"";
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width:100%;
+    height: 200px;
+    position:absolute;
+    opacity:0.5;
+    z-index: -1;
+}
+.hobbie{display:flex;
+    width: 100%;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../src/assets/img/ke2.png");
+    background-size:cover;
+    background-position: bottom;
+    background-position: center;
+    position: relative;
+    background-position: top;
+    z-index:1;
+    background-attachment: fixed;
+
+}
+.hobbie::before{content:"";
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width:100%;
+    height: 200px;
+    position:absolute;
+    opacity:0.5;
+    z-index: -1;
+
 }
 

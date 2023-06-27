@@ -1,22 +1,21 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
 
 const Test = () => {
   return (
-    <>
-      {/* <div className=" h-screen flex justify-center items-center ">
-
-        <div>
-          <input type="text" />
-          <button 
-          className="bg-blue-700 py-2 px-3 rounded-xl text-slate-100 shadow-xl shadow-blue-300 hover:bg-red-600 active:bg-black active:text-blue">Submit</button>
-        </div>
-
-      </div> */}
-
-      <div className=" relative h-screen">
-        <div className="absolute left-10 "> hello </div>
-      </div>
-    </>
+    <Swiper
+      spaceBetween={50}//
+      slidesPerView={3}//အရေအတွက်
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide className="">Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      ...
+    </Swiper>
   );
 };
 

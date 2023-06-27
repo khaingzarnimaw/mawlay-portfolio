@@ -9,8 +9,9 @@ const Top = () => {
   return (
     // <div className='h-screen'  style={{background:`url(${Topimage})`}} >
     <div
-      className="h-screen flex justify-center items-center relative"
-      id="top"
+      className="h-screen flex justify-center items-center relative top "
+      // id="top"
+      
     >
       <div className="text-center">
         <div className="text-2xl md:text-4xl font-bold text-white mb-3">
@@ -22,7 +23,7 @@ const Top = () => {
         </button>
         <div>
           <span className=" flex-col gap-1 absolute bottom-10">
-            <BsMouse className="text-3xl text-white mt-4 " />
+            <BsMouse className="text-3xl text-white mt-4 animate-bounce " />
             <RiArrowDropDownLine className="text-3xl text-white" />
           </span>
         </div>

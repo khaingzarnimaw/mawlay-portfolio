@@ -3,7 +3,8 @@ import About from "../components/About";
 import Contant from "../components/Contant";
 import Portfolio from "../components/Portfolio";
 import Top from "../components/Top";
-
+import Skill from "../components/Skill"
+import Hobbie from "../components/Hobbie"
 const Home = () => {
   return (
     <>
@@ -11,7 +12,9 @@ const Home = () => {
 
       <Top/>
       <About />
+      <Skill/>
       <Portfolio />
+      <Hobbie/>
       <Contant />
     </>
   );
