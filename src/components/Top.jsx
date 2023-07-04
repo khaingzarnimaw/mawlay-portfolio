@@ -23,7 +23,7 @@ const Top = () => {
         </button>
         <div>
           <span className=" flex-col gap-1 absolute bottom-10">
-            <BsMouse className="text-3xl text-white mt-4 animate-bounce " />
+            <BsMouse className="text-3xl text-white mt-4 animate-bounce  " />
             <RiArrowDropDownLine className="text-3xl text-white" />
           </span>
         </div>
