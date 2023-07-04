@@ -1,0 +1,14 @@
+.food {
+  animation-name: upToDown;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upToDown {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 50px;
+  }
+}
