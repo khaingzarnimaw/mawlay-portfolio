@@ -23,6 +23,9 @@ const Test = () => {
     <div>
     <GiGemini className="flex justify-center items-center h-screen text-8xl mx-auto food"/>
     </div>
+    <div>
+    <GiGemini className="flex justify-center items-center h-screen text-8xl mx-auto food"/>
+    </div>
     
     
     
