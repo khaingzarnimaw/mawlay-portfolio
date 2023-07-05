@@ -1,10 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
+import {GiGemini} from 'react-icons/gi';
+
 
 const Test = () => {
   return (
-    <Swiper
+    <>
+    {/* <Swiper
       spaceBetween={50}//
       slidesPerView={3}//အရေအတွက်
       onSlideChange={() => console.log('slide change')}
@@ -15,7 +18,18 @@ const Test = () => {
       <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
       ...
-    </Swiper>
+    </Swiper> */}
+    
+    <div>
+    <GiGemini className="flex justify-center items-center h-screen text-8xl mx-auto food"/>
+    </div>
+    
+    
+    
+
+
+  </>
+    
   );
 };
 

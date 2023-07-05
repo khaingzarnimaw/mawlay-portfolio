@@ -4,7 +4,7 @@ import {GrSend} from "react-icons/gr"
 
 const Contant = () => {
   return (
-    <div className=" flex justify-center items-center mt-15 mb-20">
+    <div className=" flex justify-center items-center my-20">
       <div className="w-[70%] mx-auto">
         <Title title={"Contact"} setTitle={"Get in touch with me"} />
 
