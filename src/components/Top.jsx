@@ -1,5 +1,4 @@
 import React from "react";
-import Topimage from "../assets/img/top.png";
 import "../assets/css/button89.css";
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs";
@@ -21,10 +20,12 @@ const Top = () => {
           Download CV
         </button>
         <div>
-          <span className=" flex-col gap-1 absolute bottom-10">
-            <BsMouse className="text-3xl text-white mt-4 animate__animated animate__bounce animate__infinite infinite  " />
-            <RiArrowDropDownLine className="text-3xl text-white" />
-          </span>
+          <a href="#about">
+            <span className=" text-3xl text-white absolute bottom-1 cursor-pointer hover:text-slate-800">
+              <BsMouse className=" animate__animated animate__bounce animate__infinite infinite animate__slower" />
+              <RiArrowDropDownLine />
+            </span>
+          </a>
         </div>
 
         <div className="md:absolute left-10 bottom-[35%] mt-5">

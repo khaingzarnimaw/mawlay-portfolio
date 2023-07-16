@@ -11,7 +11,7 @@ const Home = () => {
       {/* Home အရင်ဆုံးပေါ်အောင်လုပ် */}
 
       <Top/>
-      <About />
+      <About  />
       <Skill/>
       <Portfolio />
       <Hobbie/>
