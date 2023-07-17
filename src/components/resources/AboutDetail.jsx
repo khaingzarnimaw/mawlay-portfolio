@@ -4,6 +4,7 @@ const AboutDetail = () => {
   return (
     <div>
       keke 
+      khaingzarnimaw
     </div>
   )
 }
