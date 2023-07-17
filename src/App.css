@@ -81,6 +81,8 @@ html{
   opacity: 0.5;
   z-index: -1;
 }
+
+
 .hobbie {
   display: flex;
   width: 100%;
@@ -95,7 +97,9 @@ html{
   background-position: top;
   z-index: 1;
   background-attachment: fixed;
+
 }
+
 .hobbie::before {
   content: "";
   background: #ff00cc;
@@ -114,6 +118,9 @@ html{
   position: absolute;
   opacity: 0.5;
   z-index: -1;
+}
+.moti{
+
 }
 
 .modal {
