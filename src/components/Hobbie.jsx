@@ -13,31 +13,31 @@ const Hobbie = () => {
        <ul className='flex flex-col md:flex-row text-xs md:text-lg md:gap-10 gap-1'>
         <li>
           <div className='flex gap-1 items-center '>
-            <CgGym className="text-2xl"/>
+            <CgGym className="text-xl"/>
             Gym
           </div>
         </li>
         <li>
           <div className='flex gap-1 items-center '>
-            <CgCode className="text-2xl"/>
+            <CgCode className="text-xl"/>
             Coding
           </div>
         </li>
         <li>
           <div className='flex gap-1 items-center '>
-            <GoBook className="text-2xl"/>
+            <GoBook className="text-xl"/>
             Reading
           </div>
         </li>
         <li>
           <div className='flex gap-1 items-center'>
-          <FaGamepad className="text-2xl"/>
+          <FaGamepad className="text-xl"/>
             Gaming
           </div>
         </li>
         <li>
           <div className='flex gap-1 items-center '>
-          <MdOutlineFastfood className='text-2xl'/>
+          <MdOutlineFastfood className='text-xl'/>
             Eating
           </div>
         </li>

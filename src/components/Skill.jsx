@@ -12,30 +12,30 @@ const Skill = () => {
       <ul className="flex flex-col md:flex-row text-xs md:text-lg md:gap-10 gap-2 ">
         <li>
           <div className="flex gap-1 items-center ">
-            <AiFillHtml5 className="text-2xl"/>
+            <AiFillHtml5 className="text-xl"/>
             Html
           </div>
         </li>
         <li>
           <div className="flex gap-1 items-center ">
-            <IoLogoCss3 className="text-2xl"/>
+            <IoLogoCss3 className="text-xl"/>
             Css
           </div>
         </li>
         <li>
           <div className="flex gap-1 items-center ">
-            <IoLogoJavascript className="text-2xl"/>
+            <IoLogoJavascript className="text-xl"/>
             Javascript
           </div>
         </li>
         <li>
           <div className="flex gap-1 items-center">
-          <SiTailwindcss className="text-2xl"/>
+          <SiTailwindcss className="text-xl"/>
             Tailwind</div>
         </li>
         <li>
           <div className="flex gap-1 items-center ">
-            <SiReact className="text-2xl"/>
+            <SiReact className="text-xl"/>
             React
           </div>
         </li>

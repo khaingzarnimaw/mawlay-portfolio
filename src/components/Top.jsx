@@ -22,8 +22,9 @@ const Top = () => {
           Download CV
         </button>
         <div>
-          <span className=" flex-col gap-1 absolute bottom-10">
-            <BsMouse className="text-3xl text-white mt-4 animate__animated animate-bounce animate__infinite infinite " />
+          <span className=" flex-col gap-1 absolute bottom-2">
+
+            <BsMouse className="text-3xl text-white  animate__animated animate-bounce animate__infinite infinite animate__slower	3s " />
             <RiArrowDropDownLine className="text-3xl text-white" />
           </span>
         </div>
@@ -31,13 +32,13 @@ const Top = () => {
         <div className="md:absolute left-10 bottom-[35%] mt-5">
           <ul className="flex justify-center md:flex-col  gap-5">
             <li>
-              <FaFacebook className="text-2xl text-white shadow-sm cursor-pointer" />
+              <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" />
             </li>
             <li>
-              <FaInstagram className="text-2xl text-white shadow-sm cursor-pointer" />
+              <FaInstagram className="text-xl text-white shadow-sm cursor-pointer" />
             </li>
             <li>
-              <FaGithub className="text-2xl text-white shadow-sm cursor-pointer" />
+              <FaGithub className="text-xl text-white shadow-sm cursor-pointer" />
             </li>
           </ul>
         </div>
