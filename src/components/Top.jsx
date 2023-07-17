@@ -11,7 +11,6 @@ const Top = () => {
     <div
       className="h-screen flex justify-center items-center relative top "
       // id="top"
-      
     >
       <div className="text-center">
         <div className="text-2xl md:text-4xl font-bold text-white mb-3">
@@ -22,11 +21,12 @@ const Top = () => {
           Download CV
         </button>
         <div>
-          <span className=" flex-col gap-1 absolute bottom-2">
-
-            <BsMouse className="text-3xl text-white  animate__animated animate-bounce animate__infinite infinite animate__slower	3s " />
-            <RiArrowDropDownLine className="text-3xl text-white" />
-          </span>
+          <a href="#about">
+            <span className=" flex-col gap-1 absolute bottom-2">
+              <BsMouse className="text-3xl text-white  animate__animated animate-bounce animate__infinite infinite animate__slower 3s " />
+              <RiArrowDropDownLine className="text-3xl text-white" />
+            </span>
+          </a>
         </div>
 
         <div className="md:absolute left-10 bottom-[35%] mt-5">

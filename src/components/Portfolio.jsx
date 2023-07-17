@@ -31,7 +31,7 @@ const Portfolio = () => {
    console.log(projects);
 
   return (
-    <div className="h-screen flex  justify-center items-center my-20">
+    <div className="md:h-screen md:my-0 flex flex-col justify-center items-center my-5" id="portfolio" >
       <div className="w-[70%] mx-auto ">
         {/* <span className="text-2xl font-bold underline ">Portfolio</span>
         <span className="text-xs bg-slate-300 p-1 ml-2 ">work do so far</span> */}

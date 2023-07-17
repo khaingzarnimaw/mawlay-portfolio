@@ -11,7 +11,7 @@ import AboutDetail from "./components/resources/AboutDetail";///motal box အစ
 function App() {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
