@@ -23,7 +23,7 @@ const NavBar = () => {
       </nav>
       {/* SlidBar */}
        
-     { showSideBar && (
+     { showSideBar &&   (
       <div className="animate__animated animate__fadeInRight fixed bottom-[5%] right-3 z-50 w-[50px] bg-gray-200 shadow-sm rounded-xl border-slate-400 border-e-0 ">
         <ul className="text-slate-500  py-5 px-3 flex flex-col justify-center items-center gap-4">
           <li>

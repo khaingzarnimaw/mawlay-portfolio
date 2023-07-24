@@ -7,6 +7,8 @@ import "./assets/css/button51.css"; //{beautiful css button about ထဲမှ�
 import "animate.css"
 import "./assets/css/animation.css"
 import AboutDetail from "./components/resources/AboutDetail";///motal box အစား
+import "./assets/css/scrollbar.css"
+
 
 function App() {
   return (

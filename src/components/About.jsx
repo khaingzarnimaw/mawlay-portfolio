@@ -3,7 +3,7 @@ import AboutImg from "../assets/img/About.png";
 import Title from "./resources/Title";
 import { RiCloseLine } from "react-icons/ri";
 import PowerImg from "../assets/img/Power.png";
-
+import "../assets/css/scrollbar.css";
 
 const About = () => {
   const [modelStatus, setModelStatus] = useState(false); //modelStatus
@@ -75,11 +75,12 @@ const About = () => {
 
       {/* model ပေါ်လာအောင် */}
       {modelStatus && (
+         
         <div className="w-[100%] h-[100vh] fixed bg-black top-0 z-50 bg-opacity-10 flex justify-center items-center ">
 
-        
-          <div className="bg-white w-[95%] h-[95vh] border border-slate-400 rounded-sm shadow-sm overflow-auto  " >
-            
+         
+          <div className="bg-white w-[95%] h-[95vh] border border-slate-400 rounded-sm shadow-sm  overflow-auto ">
+          
             <div className="fixed right-10">
               <RiCloseLine
                 className="text-5xl text-red-600 cursor-pointer  "
@@ -87,7 +88,8 @@ const About = () => {
                 onClick={handleCloseModel}
               />
             </div>
-          
+           
+
             {/* Modal Detail */}
             <div className="w-[70%] mx-auto my-20 text-slate-700">
               <span className=" text-l italic ">Biography</span>
@@ -185,8 +187,6 @@ const About = () => {
               <div className="border border-b-slate-700 w-full mb-5"></div>
             </div>
           </div>
-        
-
         </div>
       )}
     </>

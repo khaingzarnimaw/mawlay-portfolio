@@ -32,6 +32,7 @@ const Top = () => {
         <div className="md:absolute left-10 bottom-[35%] mt-5">
           <ul className="flex justify-center md:flex-col  gap-5">
             <li>
+              
               <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" />
             </li>
             <li>
