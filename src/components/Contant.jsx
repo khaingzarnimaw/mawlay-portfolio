@@ -8,14 +8,15 @@ const Contant = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSendEmail = () => {
-    
+  const handleSendEmail = (e) => {
+    e.preventDefault();//reflesh ဖစ်ရင် 
+
     let data = {
       name: name,
       email: email,
       message: message,
     };
-    
+   
     emailjs
       .send(
         "service_aa5w8vx",

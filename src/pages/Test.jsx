@@ -1,6 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';//swiper input
+import "swiper/css";//swiper input
 import {GiGemini} from 'react-icons/gi';
 
 
