@@ -4,6 +4,8 @@ import Title from "./resources/Title";
 import { RiCloseLine } from "react-icons/ri";
 import PowerImg from "../assets/img/Power.png";
 import "../assets/css/scrollbar.css";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+
 
 const About = () => {
   const [modelStatus, setModelStatus] = useState(false); //modelStatus
@@ -51,17 +53,17 @@ const About = () => {
                 <div />
               </div>
               <p className="my-5 text-slate-500">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Officia quam ducimus provident, unde voluptate culpa laborum
-                illum illo exercitationem, mollitia numquam magni ea aspernatur
-                esse iusto eveniet non repudiandae voluptates!
+                {/* I am a Front End Developer from Shizuoka,Japan.I enjoy taking beautiful interface designs.
+                I also love the logic and structure of coding and always strive to write elegant and efficient code,whether it be HTML,CSS or ..... */}
+                私は静岡県出身のフロントエンド開発者です。美しいインターフェースデザインを撮るのが好きです。
+                私はコーディングのロジックと構造も大好きで、Html、Css、Javascript、React などエレガントで効率的なコードを書くよう常に努めています。
               </p>
 
               {/* <div className=" cursor-pointer  bg-orange-300 px-3 py-3 inline text-white shadow-sw " >More about me</div> */}
               {/* လိုလဲရေးလို့ ရပါတယ် */}
               {/* button52 */}
               <button
-                class="button-52"
+                className="button-52"
                 role="button"
                 // onClick={() => setModelStatus(true)} //moldel box
                 onClick={handleOpenModel}
@@ -75,12 +77,8 @@ const About = () => {
 
       {/* model ပေါ်လာအောင် */}
       {modelStatus && (
-         
         <div className="w-[100%] h-[100vh] fixed bg-black top-0 z-50 bg-opacity-10 flex justify-center items-center ">
-
-         
           <div className="bg-white w-[95%] h-[95vh] border border-slate-400 rounded-sm shadow-sm  overflow-auto ">
-          
             <div className="fixed right-10">
               <RiCloseLine
                 className="text-5xl text-red-600 cursor-pointer  "
@@ -88,7 +86,6 @@ const About = () => {
                 onClick={handleCloseModel}
               />
             </div>
-           
 
             {/* Modal Detail */}
             <div className="w-[70%] mx-auto my-20 text-slate-700">
@@ -184,10 +181,21 @@ const About = () => {
             {/* Certification */}
             <div className="w-[70%] mx-auto my-20 text-slate-700">
               <span>Certification</span>
-              <div className="border border-b-slate-700 w-full mb-5"></div>
+              <div className="border border-b-slate-900 w-full mb-5"></div>
+           
+           
+           <div className="flex  w-96 mx-auto"> 
+                <img className=" rounded-md my-4 mx-4" src={AboutImg} alt="" />  
+                
+              </div>
+
+           
+              
             </div>
           </div>
-        </div>
+       </div>
+       
+
       )}
     </>
   );

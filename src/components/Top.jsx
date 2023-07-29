@@ -1,7 +1,7 @@
 import React from "react";
 import Topimage from "../assets/img/top.png";
 import "../assets/css/button89.css";
-import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaTelegram, FaGithub } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -31,16 +31,22 @@ const Top = () => {
 
         <div className="md:absolute left-10 bottom-[35%] mt-5">
           <ul className="flex justify-center md:flex-col  gap-5">
-            <li>
-              
-              <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" />
-            </li>
-            <li>
-              <FaInstagram className="text-xl text-white shadow-sm cursor-pointer" />
-            </li>
-            <li>
-              <FaGithub className="text-xl text-white shadow-sm cursor-pointer" />
-            </li>
+            <a href="https://www.facebook.com/profile.php?id=100024764383626">
+              <li>
+                <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" />
+              </li>
+            </a>
+
+            <a href="https://t.me/khaingzarnimaw">
+              <li>
+                <FaTelegram className="text-xl text-white shadow-sm cursor-pointer" />
+              </li>
+            </a>
+            <a href="https://github.com/khaingzarnimaw">
+              <li>
+                <FaGithub className="text-xl text-white shadow-sm cursor-pointer" />
+              </li>
+            </a>
           </ul>
         </div>
       </div>

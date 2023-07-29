@@ -13,16 +13,13 @@ const ProjectCard = ({ data }) => {
           <a href={data.githubUrl} target=" _black" >
             <AiFillGithub className=" text-3xl cursor-pointer hover:text-violet-500" />
           </a>
-          <a href="">
+          <a href={data.url} >
             <AiOutlineArrowRight className="text-3xl cursor-pointer hover:text-violet-500" />
           </a>
         </span>
       </div>
       <div className="my-3 text-slate-700">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quasi
-        explicabo quia vero aspernatur sunt provident. Porro minima aliquid
-        exercitationem, tenetur aliquam repellat esse eos non atque. Corrupti,
-        tempora nostrum?
+        {data.text.slice(0,100)}...
       </div>
       <div className="flex gap-3 text-xs ">
         {/* <div className=" bg-orange-500 px-4 rounded-md ">Html</div>
