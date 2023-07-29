@@ -3,26 +3,13 @@ import AboutImg from "../assets/img/About.png";
 import Title from "./resources/Title";
 import { RiCloseLine } from "react-icons/ri";
 import PowerImg from "../assets/img/Power.png";
+import "../assets/css/scrollbar.css";
 
 const About = () => {
   const [modelStatus, setModelStatus] = useState(false); //modelStatus
-
-  const handleOpenModel = () => {
-    setModelStatus(true);
-    document.body.style.overflow = "hidden";
-  };
-
-  const handleCloseModel = () => {
-    setModelStatus(false);
-    document.body.style.overflow = "auto";
-  };
-
   return (
     <>
-      <div
-        className=" h-screen flex md:justify-center justify-start items-center"
-        id="about"
-      >
+      <div className=" flex md:justify-center justify-start items-center my-20 h-screen">
         <div className=" w-[70%] mx-auto  ">
           {/* <span className=" text-3xl font-b10old underline"> About</span>
           <span className=" text-sm bg-slate-300 p-1 ml-2">Who am I</span> */}
@@ -63,7 +50,7 @@ const About = () => {
               <button
                 class="button-52"
                 role="button"
-                onClick={handleOpenModel} //model box
+                onClick={() => setModelStatus(true)} //moldel box
               >
                 More About Me
               </button>
@@ -74,15 +61,15 @@ const About = () => {
 
       {/* model ပေါ်လာအောင် */}
       {modelStatus && (
-        <div className="w-[100%] h-[100vh] fixed bg-black top-0 z-50 bg-opacity-10 flex justify-center items-center  ">
-          <div className="bg-white w-[95%] h-[95vh] border border-slate-400 rounded-sm shadow-sm overflow-y-auto ">
-
-            <div className="fixed right-10 ">
+        <div className="w-[100%] h-[100vh] fixed bg-black top-0 z-50 bg-opacity-10 flex justify-center items-center ">
+          <div className="bg-white w-[95%] h-[95vh]">
+            <div className="float-right">
               <RiCloseLine
                 className="text-5xl text-red-600 cursor-pointer  "
-                onClick={handleCloseModel} //model box close
+                onClick={() => setModelStatus(false)} //model box close
               />
             </div>
+
             {/* Modal Detail */}
             <div className="w-[70%] mx-auto my-20 text-slate-700">
               <span className=" text-l italic ">Biography</span>
@@ -172,6 +159,12 @@ const About = () => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Certification */}
+            <div className="w-[70%] mx-auto my-20 text-slate-700">
+              <span>Certification</span>
+              <div className="border border-b-slate-700 w-full mb-5"></div>
             </div>
           </div>
         </div>

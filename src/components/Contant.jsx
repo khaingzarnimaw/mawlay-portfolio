@@ -4,49 +4,18 @@ import { GrSend } from "react-icons/gr";
 import emailjs from "@emailjs/browser";
 
 const Contant = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSendEmail = () => {
-    let data = {
-      name: name,
-      email: email,
-      message: message,
-    };
-
-    emailjs
-      .send("service_zpj6fom", "template_7ig565q", data, "soR96ieOcIAK5CjJJ")
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-          setName("");
-          setEmail("");
-          setMessage("");
-        },
-        function (err) {
-          console.log("FAILED...", err);
-        }
-      );
-  };
-
   return (
-    <div
-      className="h-screen flex justify-center items-center my-20"
-      id="contact"
-    >
+    <div className="h-screen flex justify-center items-center my-20">
       <div className="w-[70%] mx-auto">
         <Title title={"Contact"} setTitle={"Get in touch with me"} />
 
         <div className=" flex gap-3 flex-col md:flex-row ">
           <div className=" basis-1/2 ">
-            <form onSubmit={handleSendEmail} className=" flex flex-col gap-5 ">
+            <form className=" flex flex-col gap-5 ">
               <div>
                 <label>Your Name</label>
                 <input
                   type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
                   placeholder="Enter Your Name"
                   className=" mt-1  py-3 px-4 border border-slate-800 rounded-sm w-full"
                 />
@@ -55,8 +24,6 @@ const Contant = () => {
                 <label>Your Email</label>
                 <input
                   type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter Your Email"
                   className=" mt-1  py-3 px-4 border border-slate-800 rounded-sm w-full"
                 />
@@ -65,8 +32,6 @@ const Contant = () => {
                 <label>Your Message</label>
                 <textarea
                   className=" mt-1 py-3 px-4 border border-slate-800 rounded-sm w-full"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
                   cols="30"
                   rows="5"
                   placeholder="Enter Yoru Message"

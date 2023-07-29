@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Power from "../assets/img/power.jpg";
-// Import Swiper styles
+import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import 'swiper/css/pagination';
-import "swiper/css/navigation";
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import {GiGemini} from 'react-icons/gi';
+
 
 const Test = () => {
   const [array, setArray] = useState([

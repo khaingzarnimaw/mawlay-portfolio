@@ -20,17 +20,17 @@ const Top = () => {
           Download CV
         </button>
         <div>
-          <a href="#about">
-            <span className=" text-3xl text-white absolute bottom-1 cursor-pointer hover:text-slate-800">
-              <BsMouse className=" animate__animated animate__bounce animate__infinite infinite animate__slower" />
-              <RiArrowDropDownLine />
-            </span>
-          </a>
+          <span className=" flex-col gap-1 absolute bottom-2">
+
+            <BsMouse className="text-3xl text-white  animate__animated animate-bounce animate__infinite infinite animate__slower	3s " />
+            <RiArrowDropDownLine className="text-3xl text-white" />
+          </span>
         </div>
 
         <div className="md:absolute left-10 bottom-[35%] mt-5">
           <ul className="flex justify-center md:flex-col  gap-5">
             <li>
+              
               <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" />
             </li>
             <li>
