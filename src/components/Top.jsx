@@ -25,7 +25,7 @@ const Top = () => {
           />
         </div>
         <div className=" text-white mb-8">Welcome to my site</div>
-        <a role="button" className="button-89" href="../src/assets/pdf/KhaigZarNiMaw.pdf" target="_black">
+        <a role="button" className="button-89" href="https://drive.google.com/file/d/1vxy-NrF1r2RFlQXHesH6-cFNP1fyQq2x/view?usp=drive_link" target="_black">
           Download CV
         </a>
         <div>
