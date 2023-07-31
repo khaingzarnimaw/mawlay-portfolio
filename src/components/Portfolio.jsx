@@ -97,7 +97,7 @@ const Portfolio = () => {
           {projects?.map((project, index) => {
             return (
               <SwiperSlide key={index}>
-                <ProjectCard data={project} />{" "}
+                <ProjectCard data={project} />
               </SwiperSlide>
             );
           })}

@@ -3,13 +3,9 @@ import "../assets/css/button89.css";
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Typewriter from 'typewriter-effect';
 
 const Top = () => {
-
-  const handleDownloadPDF = () => {
-    l
-  }
-
   return (
     // <div className='h-screen'  style={{background:`url(${Topimage})`}} >
     <div
@@ -18,10 +14,18 @@ const Top = () => {
     >
       <div className="text-center">
         <div className="text-2xl md:text-4xl font-bold text-white mb-3">
-          Khaing Zar Ni Maw
+
+          <Typewriter
+            options={{
+              strings: ['Khaing Zar Ni Maw', 'カインザーニモー',"I'm a Web Developer"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+
         </div>
         <div className=" text-white mb-8">Welcome to my site</div>
-        <a role="button" className="button-89" href="../src/assets/pdf/KhaigZarNiMaw.pdf" target="_black"  download >
+        <a role="button" className="button-89" href="../src/assets/pdf/KhaigZarNiMaw.pdf" target="_black" download >
           Download CV
         </a>
         <div>
