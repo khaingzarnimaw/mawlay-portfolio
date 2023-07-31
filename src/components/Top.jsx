@@ -25,13 +25,16 @@ const Top = () => {
           />
         </div>
         <div className=" text-white mb-8">Welcome to my site</div>
-        <a role="button" className="button-89" href="https://drive.google.com/file/d/1vxy-NrF1r2RFlQXHesH6-cFNP1fyQq2x/view?usp=drive_link" target="_black">
+
+        <a   href="https://drive.google.com/file/d/1vxy-NrF1r2RFlQXHesH6-cFNP1fyQq2x/view?usp=drive_link"  >
+         <div className="button-89" role="button" target="_blank" >
           Download CV
+         </div>
         </a>
         <div>
           <a href="#about">
             <span className=" flex-col gap-1 absolute bottom-2">
-              <BsMouse className="text-3xl text-white  animate__animated animate-bounce animate__infinite infinite animate__slower 3s " />
+              <BsMouse className="text-3xl text-white  animate__animated animate-bounce animate__infinite infinite animate__slower 3s " target="_blank" />
               <RiArrowDropDownLine className="text-3xl text-white" />
             </span>
           </a>
@@ -44,18 +47,18 @@ const Top = () => {
               
             >
               <li>
-                <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" target="_black" />
+                <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" target="_blank" />
               </li>
             </a>
 
             <a href="https://t.me/khaingzarnimaw" >
               <li>
-                <FaTelegram className="text-xl text-white shadow-sm cursor-pointer" target="_black" />
+                <FaTelegram className="text-xl text-white shadow-sm cursor-pointer" target="_blank" />
               </li>
             </a>
             <a href="https://github.com/khaingzarnimaw" >
               <li>
-                <FaGithub className="text-xl text-white shadow-sm cursor-pointer" target="_black" />
+                <FaGithub className="text-xl text-white shadow-sm cursor-pointer" target="_blank" />
               </li>
             </a>
           </ul>
