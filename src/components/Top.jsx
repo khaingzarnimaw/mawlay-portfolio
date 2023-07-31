@@ -4,6 +4,7 @@ import "../assets/css/button89.css";
 import { FaFacebook, FaTelegram, FaGithub } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Typewriter from "typewriter-effect";
 
 const Top = () => {
   return (
@@ -14,12 +15,19 @@ const Top = () => {
     >
       <div className="text-center">
         <div className="text-2xl md:text-4xl font-bold text-white mb-3">
-          Khaing Zar Ni Maw
+        
+          <Typewriter
+            options={{
+              strings: ["Hi there!"," I'm Khaing Zar Ni Maw","I'm Web Developer","I'm very hard worker","カイン　ザー　ニ　モー　"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </div>
         <div className=" text-white mb-8">Welcome to my site</div>
-        <button role="button" className="button-89">
+        <a role="button" className="button-89" href="../src/assets/pdf/KhaigZarNiMaw.pdf" target="_black">
           Download CV
-        </button>
+        </a>
         <div>
           <a href="#about">
             <span className=" flex-col gap-1 absolute bottom-2">
@@ -31,20 +39,23 @@ const Top = () => {
 
         <div className="md:absolute left-10 bottom-[35%] mt-5">
           <ul className="flex justify-center md:flex-col  gap-5">
-            <a href="https://www.facebook.com/profile.php?id=100024764383626">
+            <a
+              href="https://www.facebook.com/profile.php?id=100024764383626"
+              
+            >
               <li>
-                <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" />
+                <FaFacebook className="text-xl text-white shadow-sm cursor-pointer" target="_black" />
               </li>
             </a>
 
-            <a href="https://t.me/khaingzarnimaw" target="_black">
+            <a href="https://t.me/khaingzarnimaw" >
               <li>
-                <FaTelegram className="text-xl text-white shadow-sm cursor-pointer" />
+                <FaTelegram className="text-xl text-white shadow-sm cursor-pointer" target="_black" />
               </li>
             </a>
-            <a href="https://github.com/khaingzarnimaw" target="_black">
+            <a href="https://github.com/khaingzarnimaw" >
               <li>
-                <FaGithub className="text-xl text-white shadow-sm cursor-pointer" />
+                <FaGithub className="text-xl text-white shadow-sm cursor-pointer" target="_black" />
               </li>
             </a>
           </ul>
