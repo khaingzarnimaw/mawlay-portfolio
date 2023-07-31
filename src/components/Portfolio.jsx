@@ -8,9 +8,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
+import "../assets/css/swiper.css"
+
 
 const Portfolio = () => {
+
+ 
+
   const [projects, setProjects] = useState([
     {
       title: "Project One",
@@ -42,13 +47,17 @@ const Portfolio = () => {
       url: "https://foodie-eta-dusky.vercel.app/",
       languages: ["React", "TailWind"],
     },
+    
+    
   ]);
   //  console.log(projects);
+  
 
   return (
     <div
-      className="md:h-screen md:my-0 flex flex-col justify-center items-center my-5"
+      className="md:h-screen md:my-0 flex flex-col justify-center items-center my-5 "
       id="portfolio"
+      
     >
       <div className="w-[70%] mx-auto ">
         {/* <span className="text-2xl font-bold underline ">Portfolio</span>
@@ -56,9 +65,16 @@ const Portfolio = () => {
         <Title title={"Portfolio"} setTitle={"Work do so far"} />
         {/* <div className="flex gap-5 flex-col md:flex-row "> */}
 
-        <Swiper
-          slidesPerView={3}
+       
+        <Swiper 
+          // slidesPerView={2}//
           spaceBetween={30}
+          breakpoints={{
+            700:{
+              slidesPerView:2,
+            }
+            }
+          }
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -66,22 +82,30 @@ const Portfolio = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Autoplay,Pagination,Navigation]}
+          // pagination={{
+          //   type: 'fraction',
+          // }}
+          modules={[Autoplay,Navigation]}
+          
           className="mySwiper"
         >
           {projects?.map((project, index) => {
             return (
               <SwiperSlide key= {index}>
                 <ProjectCard data= {project} />{" "}
+             
               </SwiperSlide>
+
             );
           })}
         </Swiper>
 
-      
+        
+
+        
       </div>
     </div>
   );
 };
 
-export default Portfolio;
+export default Portfolio;//Portfolio

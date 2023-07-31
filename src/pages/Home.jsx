@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio";
 import Top from "../components/Top";
 import Skill from "../components/Skill"
 import Hobbie from "../components/Hobbie"
+// import Swiper from "../components/Swiper";
 
 
 const Home = () => {
@@ -15,9 +16,10 @@ const Home = () => {
       <Top/>
       <About />
       <Skill/>
-      <Portfolio />
+      <Portfolio  />
       <Hobbie/>
       <Contant />
+      {/* <Swiper/> */}
       
       
     </>

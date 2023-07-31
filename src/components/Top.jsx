@@ -37,12 +37,12 @@ const Top = () => {
               </li>
             </a>
 
-            <a href="https://t.me/khaingzarnimaw">
+            <a href="https://t.me/khaingzarnimaw" target="_black">
               <li>
                 <FaTelegram className="text-xl text-white shadow-sm cursor-pointer" />
               </li>
             </a>
-            <a href="https://github.com/khaingzarnimaw">
+            <a href="https://github.com/khaingzarnimaw" target="_black">
               <li>
                 <FaGithub className="text-xl text-white shadow-sm cursor-pointer" />
               </li>

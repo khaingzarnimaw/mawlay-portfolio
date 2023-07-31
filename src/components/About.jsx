@@ -4,8 +4,13 @@ import Title from "./resources/Title";
 import { RiCloseLine } from "react-icons/ri";
 import PowerImg from "../assets/img/Power.png";
 import "../assets/css/scrollbar.css";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { EffectCards } from "swiper/modules";
 
 const About = () => {
   const [modelStatus, setModelStatus] = useState(false); //modelStatus
@@ -19,6 +24,8 @@ const About = () => {
     setModelStatus(false);
     document.body.style.overflow = "auto";
   };
+
+  
   return (
     <>
       <div
@@ -56,7 +63,8 @@ const About = () => {
                 {/* I am a Front End Developer from Shizuoka,Japan.I enjoy taking beautiful interface designs.
                 I also love the logic and structure of coding and always strive to write elegant and efficient code,whether it be HTML,CSS or ..... */}
                 私は静岡県出身のフロントエンド開発者です。美しいインターフェースデザインを撮るのが好きです。
-                私はコーディングのロジックと構造も大好きで、Html、Css、Javascript、React などエレガントで効率的なコードを書くよう常に努めています。
+                私はコーディングのロジックと構造も大好きで、Html、Css、Javascript、React
+                などエレガントで効率的なコードを書くよう常に努めています。
               </p>
 
               {/* <div className=" cursor-pointer  bg-orange-300 px-3 py-3 inline text-white shadow-sw " >More about me</div> */}
@@ -182,20 +190,30 @@ const About = () => {
             <div className="w-[70%] mx-auto my-20 text-slate-700">
               <span>Certification</span>
               <div className="border border-b-slate-900 w-full mb-5"></div>
-           
-           
-           <div className="flex  w-96 mx-auto"> 
-                <img className=" rounded-md my-4 mx-4" src={AboutImg} alt="" />  
-                
-              </div>
 
-           
-              
+              <div className="flex  w-80 mx-auto">
+                <img className=" rounded-md my-4 mx-4" src={AboutImg} alt="" />
+                <Swiper
+                  effect={"cards"}
+                  grabCursor={true}
+                  modules={[EffectCards]}
+                
+                  className="myswiper"
+                >
+                
+                  <SwiperSlide>
+
+                  
+
+                  </SwiperSlide>
+                 
+                  
+                  
+                </Swiper>
+              </div>
             </div>
           </div>
-       </div>
-       
-
+        </div>
       )}
     </>
   );

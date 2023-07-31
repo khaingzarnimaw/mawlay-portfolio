@@ -5,7 +5,7 @@ import { AiFillGithub, AiOutlineArrowRight } from "react-icons/ai";
 const ProjectCard = ({ data }) => {
   return (
     <div>
-      <img src={Top} alt="" />
+      <img src={Top} className=" rounded-lg " alt="" />
 
       <div className="flex justify-between  items-center mt-2 ">
         <div className=" text-l font-bold">{data.title}</div>
