@@ -5,10 +5,9 @@ import { RiCloseLine } from "react-icons/ri";
 import PowerImg from "../assets/img/Power.png";
 import "../assets/css/scrollbar.css";
 
-
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
@@ -25,7 +24,19 @@ const About = () => {
     document.body.style.overflow = "auto";
   };
 
-  
+  const cardsData = [
+    {
+      image:"../assets/img/ke2.png",
+      title: "Card 1",
+    },
+    {
+      image: "../assets/img/Power.png",
+      title: "Card 2",
+    },
+  ];
+
+  console.log(cardsData);
+
   return (
     <>
       <div
@@ -192,23 +203,26 @@ const About = () => {
               <div className="border border-b-slate-900 w-full mb-5"></div>
 
               <div className="flex  w-80 mx-auto">
-                <img className=" rounded-md my-4 mx-4" src={AboutImg} alt="" />
+                <img className=" rounded-md my-4 mx-4"  alt="" />
+
                 <Swiper
                   effect={"cards"}
                   grabCursor={true}
                   modules={[EffectCards]}
-                
-                  className="myswiper"
+                  className="mySwiper"
                 >
+              {cardsData.map((card,index)=>{
+                return (
+                 <SwiperSlide key={index}>
+                    {card.image}
+                   
+                 </SwiperSlide>
+                );
+              }
+
+              )}
                 
-                  <SwiperSlide>
 
-                  
-
-                  </SwiperSlide>
-                 
-                  
-                  
                 </Swiper>
               </div>
             </div>
