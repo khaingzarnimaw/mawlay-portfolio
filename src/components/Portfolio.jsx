@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
-import "../assets/css/swiper.css"
+
 
 
 const Portfolio = () => {

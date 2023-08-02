@@ -7,9 +7,9 @@ import "../assets/css/scrollbar.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
+// import "../../src/assets/css/cardswiper.css"
 
 const About = () => {
   const [modelStatus, setModelStatus] = useState(false); //modelStatus
@@ -26,16 +26,28 @@ const About = () => {
 
   const cardsData = [
     {
-      image:"../assets/img/ke2.png",
+      image:"../../src/assets/img/Power.png",
       title: "Card 1",
     },
     {
-      image: "../assets/img/Power.png",
+      image: "../../src/assets/img/Power.png",
       title: "Card 2",
+    },
+    {
+      image: "../../src/assets/img/Power.png",
+      title: "Card 3",
+    },
+    {
+      image: "../../src/assets/img/Power.png",
+      title: "Card 4",
+    },
+    {
+      image: "../../src/assets/img/Power.png",
+      title: "Card 5",
     },
   ];
 
-  console.log(cardsData);
+  
 
   return (
     <>
@@ -204,18 +216,21 @@ const About = () => {
 
               <div className="flex  w-80 mx-auto">
                 <img className=" rounded-md my-4 mx-4"  alt="" />
-
-                <Swiper
+                
+                {/* <Swiper
                   effect={"cards"}
                   grabCursor={true}
                   modules={[EffectCards]}
-                  className="mySwiper"
+                  
                 >
               {cardsData.map((card,index)=>{
                 return (
-                 <SwiperSlide key={index}>
-                    {card.image}
-                   
+                 <SwiperSlide key={index} >
+                  <div className=" w-auto h-50 bg-black border border-blue-400 rounded-lg">
+                  {card.title}
+                   <img src={card.image} alt="" className=" rounded-lg"/>
+                  </div>
+                  
                  </SwiperSlide>
                 );
               }
@@ -223,7 +238,7 @@ const About = () => {
               )}
                 
 
-                </Swiper>
+                </Swiper> */}
               </div>
             </div>
           </div>
