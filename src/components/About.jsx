@@ -60,7 +60,7 @@ const About = () => {
       title: "Japan Basic",
     },
     {
-      image: "../../src/assets/img/c9.jpg",
+      image: "/public/c9.jpg",
       title: "日本語能力試験　N2",
     },
   ];
