@@ -6,9 +6,11 @@ import PowerImg from "../assets/img/Power.png";
 import "../assets/css/scrollbar.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
-import "swiper/css/effect-cards";
-import { EffectCards } from "swiper/modules";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+// import { EffectCards } from "swiper/modules";
 // import "../../src/assets/css/cardswiper.css"
 
 const About = () => {
@@ -26,28 +28,42 @@ const About = () => {
 
   const cardsData = [
     {
-      image:"../../src/assets/img/Power.png",
-      title: "Card 1",
+      image: "../../src/assets/img/c2.jpg",
+      title: "Javascript",
     },
     {
-      image: "../../src/assets/img/Power.png",
-      title: "Card 2",
+      image: "../../src/assets/img/c5.jpg",
+      title: "React",
     },
     {
-      image: "../../src/assets/img/Power.png",
-      title: "Card 3",
+      image: "../../src/assets/img/c1.jpg",
+      title: "C# (mvc) ",
     },
     {
-      image: "../../src/assets/img/Power.png",
-      title: "Card 4",
+      image: "../../src/assets/img/c3.jpg",
+      title: "React 17 & ASP.Net core 6",
     },
     {
-      image: "../../src/assets/img/Power.png",
-      title: "Card 5",
+      image: "../../src/assets/img/c4.jpg",
+      title: "C# programming",
+    },
+    {
+      image: "../../src/assets/img/c6.jpg",
+      title: "IT パスポート",
+    },
+    {
+      image: "../../src/assets/img/c7.jpg",
+      title: "C#　プログラミング　",
+    },
+    {
+      image: "../../src/assets/img/c8.jpg",
+      title: "Japan Basic",
+    },
+    {
+      image: "../../src/assets/img/c9.jpg",
+      title: "日本語能力試験　N2",
     },
   ];
-
-  
 
   return (
     <>
@@ -210,38 +226,40 @@ const About = () => {
             </div>
 
             {/* Certification */}
-            <div className="w-[70%] mx-auto my-20 text-slate-700">
+            <div className="w-[70%] mx-auto my-10 text-slate-700 ">
               <span>Certification</span>
-              <div className="border border-b-slate-900 w-full mb-5"></div>
+              <div className="border border-b-slate-900 w-full mb-5 "></div>
 
-              <div className="flex  w-80 mx-auto">
-                <img className=" rounded-md my-4 mx-4"  alt="" />
-                
-                {/* <Swiper
-                  effect={"cards"}
-                  grabCursor={true}
-                  modules={[EffectCards]}
-                  
+              {/* <div className=" w-80 mx-auto "> */}
+                <Swiper
+                  navigation={true}
+                  modules={[Navigation]}
+                  className="mySwiper"
                 >
-              {cardsData.map((card,index)=>{
-                return (
-                 <SwiperSlide key={index} >
-                  <div className=" w-auto h-50 bg-black border border-blue-400 rounded-lg">
-                  {card.title}
-                   <img src={card.image} alt="" className=" rounded-lg"/>
-                  </div>
-                  
-                 </SwiperSlide>
-                );
-              }
-
-              )}
-                </Swiper> */}
-              </div>
-            </div>
+                  {cardsData.map((card, index) => {
+                    return (
+                      <SwiperSlide key={index}>
+                        <div className=" ">
+                          {card.title}
+                          <img
+                            src={card.image}
+                            alt=""
+                            className=" rounded-lg mx-auto h-96"
+                          />
+                        </div>
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+              {/* </div> */}
+            </div> 
           </div>
         </div>
-      )}
+
+       )}
+       
+
+
     </>
   );
 };
