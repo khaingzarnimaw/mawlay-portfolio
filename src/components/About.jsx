@@ -12,6 +12,15 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 // import { EffectCards } from "swiper/modules";
 // import "../../src/assets/css/cardswiper.css"
+import c1 from "../assets/img/c1.jpg"
+import c2 from "../assets/img/c2.jpg"
+import c3 from "../assets/img/c3.jpg"
+import c4 from "../assets/img/c4.jpg"
+import c5 from "../assets/img/c5.jpg"
+import c6 from "../assets/img/c6.jpg"
+import c7 from "../assets/img/c7.jpg"
+import c8 from "../assets/img/c8.jpg"
+import c9 from "../assets/img/c9.jpg"
 
 const About = () => {
   const [modelStatus, setModelStatus] = useState(false); //modelStatus
@@ -28,39 +37,39 @@ const About = () => {
 
   const cardsData = [
     {
-      image: "../../src/assets/img/c2.jpg",
+      image: c2,
       title: "Javascript",
     },
     {
-      image: "../../src/assets/img/c5.jpg",
+      image: c5,
       title: "React",
     },
     {
-      image: "../../src/assets/img/c1.jpg",
+      image: c1,
       title: "C# (mvc) ",
     },
     {
-      image: "../../src/assets/img/c3.jpg",
+      image: c3,
       title: "React 17 & ASP.Net core 6",
     },
     {
-      image: "../../src/assets/img/c4.jpg",
+      image: c4,
       title: "C# programming",
     },
     {
-      image: "../../src/assets/img/c6.jpg",
+      image: c6,
       title: "IT パスポート",
     },
     {
-      image: "../../src/assets/img/c7.jpg",
+      image: c7,
       title: "C#　プログラミング　",
     },
     {
-      image: "../../src/assets/img/c8.jpg",
+      image: c8,
       title: "Japan Basic",
     },
     {
-      image: "/public/c9.jpg",
+      image: c9,
       title: "日本語能力試験　N2",
     },
   ];
