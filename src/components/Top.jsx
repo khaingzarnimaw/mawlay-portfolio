@@ -33,7 +33,8 @@ const Top = () => {
         <div className=" text-white mb-8">Welcome to my site</div>
 
         {/* <a   href="https://drive.google.com/file/d/1vxy-NrF1r2RFlQXHesH6-cFNP1fyQq2x/view?usp=drive_link"  > */}
-        <a href="/KhaigZarNiMaw.pdf">
+        {/* <a href="/KhaigZarNiMaw.pdf"> */}
+        <a href="/public/Khaing.pdf">
           <div className="button-89 " role="button" target="_blank">
             Download CV
           </div>
