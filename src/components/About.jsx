@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import AboutImg from "../assets/img/About.png";
 import Title from "./resources/Title";
 import { RiCloseLine } from "react-icons/ri";
-import PowerImg from "../assets/img/Power.png";
+// import PowerImg from "../assets/img/Power.png";
+import MeImg from "../assets/img/Me.png"
 import "../assets/css/scrollbar.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -145,25 +146,25 @@ const About = () => {
 
             {/* Modal Detail */}
             <div className="w-[70%] mx-auto my-20 text-slate-700">
-              <span className=" text-l italic ">Biography</span>
+              <span className=" text-l italic">Biography</span>
               <div className="border border-b-slate-700 w-full mb-5"></div>
               {/* Biography */}
-              <div className="flex gap-10">
+              <div className="md:flex  gap-10">
                 <div className="basis-1/4">
-                  <img src={PowerImg} className="w-full rounded-sm" alt="" />
+                  <img src={MeImg} className="md:rounded-sm rounded-full mx-auto mb-4 " alt="" />
                 </div>
-                <div className="basis-3/4">
+                <div className="basis-3/4 ">
                   <table>
-                    <tbody>
-                      <tr>
-                        <td>Name</td>
-                        <td>:</td>
+                    <tbody >
+                      <tr >
+                        <td>Name</td> 
+                        <td className="px-1">:</td>
                         <td>Khaing Zar Ni Maw</td>
                       </tr>
                       <tr>
                         <td>Email</td>
                         <td>:</td>
-                        <td>khaingzarnimaw1996@gmail.com</td>
+                        <td >khaingzarnimaw1996@gmail.com</td>
                       </tr>
                       <tr>
                         <td>Phone</td>
@@ -194,7 +195,7 @@ const About = () => {
                         <td>Address</td>
                         <td>:</td>
                         <td>
-                          静岡市駿河区石田３丁目１６番４０号ホンケマンション２０２号
+                          静岡市駿河区石田3丁目16番40号ホンケマンション202号
                         </td>
                       </tr>
                     </tbody>
@@ -204,14 +205,14 @@ const About = () => {
             </div>
             {/* Education */}
             <div className="w-[70%] mx-auto my-20 text-slate-700">
-              <span className="text-l italic">Education</span>
+              <span className="text-l  italic">Education</span>
               <div className="border border-b-slate-700 w-full mb-5 "></div>
               {/* Biography */}
 
               <div className="flex">
                 <div className="basis-1/3">
                   <div>
-                    <div className="flex flex-col gap-4 text-sm">
+                    <div className="flex flex-col gap-4 text-l">
                       <div>2012年10月 〜 2016年10月</div>
                       <div>2019年3月 〜 2021年3月</div>
                       <div>2021年4月 〜 2023年3月</div>
@@ -219,7 +220,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="basis-2/3">
-                  <div className="flex flex-col gap-4 text-sm">
+                  <div className="flex flex-col gap-4 text-l">
                     <div>
                       B.A(Geography) Yangon University of Distance Education
                       (Dagon branch)
@@ -237,7 +238,7 @@ const About = () => {
             {/* Certification */}
             <div className="w-[70%] mx-auto my-10 text-slate-700 ">
               <span>Certification</span>
-              <div className="border border-b-slate-900 w-full mb-5 "></div>
+              <div className="border border-b-slate-900  w-full mb-5    "></div>
 
               {/* <div className=" w-80 mx-auto "> */}
                 <Swiper
@@ -253,7 +254,7 @@ const About = () => {
                           <img
                             src={card.image}
                             alt=""
-                            className=" rounded-lg mx-auto h-96"
+                            className=" rounded-lg mx-auto md:h-96 w-[50%] md:w-[70%] h-40 m-3 md:4"
                           />
                         </div>
                       </SwiperSlide>
